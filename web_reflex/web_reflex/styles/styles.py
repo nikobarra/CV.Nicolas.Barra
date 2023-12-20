@@ -11,6 +11,7 @@ MARGIN="30px"
 
 class Size(Enum):
     SMALL="0.5em"
+    MEDIUM="0.8em"
     DEFAULT="1em"
     BIG="2em"
 
@@ -29,3 +30,16 @@ BASE_STYLE = {
         "_hover":{},
     }
 }
+
+button_title_style  = dict(
+    font_size=Size.DEFAULT.value,
+)
+
+button_body_style  = dict(
+    font_size=Size.MEDIUM.value,
+)
+
+title_style = dict(
+    width="100%",
+    padding_top=Size.DEFAULT.value,
+)
