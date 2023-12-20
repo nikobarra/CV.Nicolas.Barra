@@ -1,14 +1,18 @@
 import reflex as rx
 from web_reflex.styles.styles import Size as Size
-
+from web_reflex.styles.colors import Color as Color
 
 def navbar() -> rx.Component:
     return rx.hstack(
-        rx.text("Nicolas Barra"),
+        rx.box(
+            rx.span("Nicolás.", color=Color.PRIMARY.value),
+            rx.span("Barra", color=Color.SECONDARY.value),
+            font_family="Oswald",
+            ),
         position="sticky",
-        bg="lightgray",
-        padding_x=Size.DEFAULT.value,
-        padding_y=Size.SMALL.value,
+        bg=Color.CONTENT.value,
+        padding_x=Size.BIG.value,
+        padding_y=Size.DEFAULT.value,
         z_index="999",
         top="0",
     )

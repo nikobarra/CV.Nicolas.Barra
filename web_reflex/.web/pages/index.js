@@ -15,21 +15,26 @@ export default function Component() {
     <Fragment>
   <Fragment_fd0e7cb8f9fb4669a6805377d925fba0/>
   <Box>
-  <HStack sx={{"position": "sticky", "bg": "lightgray", "paddingX": "1em", "paddingY": "0.5em", "zIndex": "999", "top": "0"}}>
-  <Text>
-  {`Nicolas Barra`}
+  <HStack sx={{"position": "sticky", "bg": ["#171f26"], "paddingX": "2em", "paddingY": "1em", "zIndex": "999", "top": "0"}}>
+  <Box sx={{"fontFamily": "Oswald"}}>
+  <Text as={`span`} sx={{"color": ["#14a1f0"]}}>
+  {`Nicolás.`}
 </Text>
+  <Text as={`span`} sx={{"color": ["#087ec4"]}}>
+  {`Barra`}
+</Text>
+</Box>
 </HStack>
   <Center>
   <VStack sx={{"maxWidth": "600px", "width": "100%", "marginY": "2em"}}>
-  <VStack alignItems={`start`} spacing={`2em`}>
-  <HStack>
+  <VStack alignItems={`start`} spacing={`2em`} sx={{"color": ["#c3c7cb"]}}>
+  <HStack spacing={`2em`}>
   <Avatar name={`Nicolas Barra`} size={`xl`}/>
   <VStack alignItems={`start`}>
-  <Heading size={`lg`}>
+  <Heading size={`lg`} sx={{"color": ["#f1f2f4"], "fontFamily": "Oswald"}}>
   {`Nicolás Barra`}
 </Heading>
-  <Text sx={{"marginTop": "0px !important"}}>
+  <Text sx={{"marginTop": "0px !important", "color": ["#c3c7cb"]}}>
   {`@nicolasbarrapelecano@gmail.com`}
 </Text>
   <HStack>
@@ -46,22 +51,22 @@ export default function Component() {
 </VStack>
 </HStack>
   <Flex sx={{"width": "100%"}}>
-  <Box sx={{"fontDize": "0.8em"}}>
-  <Text as={`span`} sx={{"fontWeight": "bold", "color": "blue"}}>
+  <Box sx={{"fontDize": "0.8em", "color": ["#c3c7cb"]}}>
+  <Text as={`span`} sx={{"fontWeight": "bold", "color": ["#14a1f0"]}}>
   {`+1 `}
 </Text>
   {`años de experiencia`}
 </Box>
   <Spacer/>
-  <Box sx={{"fontDize": "0.8em"}}>
-  <Text as={`span`} sx={{"fontWeight": "bold", "color": "blue"}}>
+  <Box sx={{"fontDize": "0.8em", "color": ["#c3c7cb"]}}>
+  <Text as={`span`} sx={{"fontWeight": "bold", "color": ["#14a1f0"]}}>
   {`+1 `}
 </Text>
   {`años de experiencia`}
 </Box>
   <Spacer/>
-  <Box sx={{"fontDize": "0.8em"}}>
-  <Text as={`span`} sx={{"fontWeight": "bold", "color": "blue"}}>
+  <Box sx={{"fontDize": "0.8em", "color": ["#c3c7cb"]}}>
+  <Text as={`span`} sx={{"fontWeight": "bold", "color": ["#14a1f0"]}}>
   {`+1 `}
 </Text>
   {`años de experiencia`}
@@ -69,22 +74,22 @@ export default function Component() {
   <Spacer/>
 </Flex>
   <Text>
-  {`Hola soy niko bla bla bla bla hola hola hola hol hols hols hols hols fkmfdfdkfdkfdfkdkfdfdf fjdmkdjfoiusor dsfosfhsdsd sdfjdjflsdjfsjv fljlgksjfdljfs  bla bla bls bla`}
+  {`Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident temporibus officiis nulla consequatur ab, ipsa assumenda perferendis odio molestias sapiente saepe. Numquam quisquam eaque repellat molestias doloremque earum ducimus sit.`}
 </Text>
 </VStack>
   <VStack sx={{"width": "100%"}}>
-  <Heading size={`lg`} sx={{"width": "100%", "paddingTop": "1em"}}>
+  <Heading size={`lg`} sx={{"width": "100%", "paddingTop": "1em", "color": ["#f1f2f4"]}}>
   {`Comunidad`}
 </Heading>
   <Link as={NextLink} href={`https://github.com/nikobarra`} isExternal={true} sx={{"width": "100%", "textDecoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em"}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "backgroundColor": ["#171f26"], "color": ["#f1f2f4"], "_hover": {"backgroundColor": ["#087ec4"]}}}>
   <HStack>
   <ArrowForwardIcon sx={{"width": "2em", "height": "2em"}}/>
   <VStack alignItems={`start`}>
-  <Text sx={{"fontSize": "1em"}}>
+  <Text sx={{"fontSize": "1em", "color": ["#f1f2f4"]}}>
   {`GitHub`}
 </Text>
-  <Text sx={{"fontSize": "0.8em"}}>
+  <Text sx={{"fontSize": "0.8em", "color": ["#c3c7cb"]}}>
   {`Repositorios`}
 </Text>
 </VStack>
@@ -92,14 +97,14 @@ export default function Component() {
 </Button>
 </Link>
   <Link as={NextLink} href={`https://www.youtube.com`} isExternal={true} sx={{"width": "100%", "textDecoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em"}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "backgroundColor": ["#171f26"], "color": ["#f1f2f4"], "_hover": {"backgroundColor": ["#087ec4"]}}}>
   <HStack>
   <ArrowForwardIcon sx={{"width": "2em", "height": "2em"}}/>
   <VStack alignItems={`start`}>
-  <Text sx={{"fontSize": "1em"}}>
+  <Text sx={{"fontSize": "1em", "color": ["#f1f2f4"]}}>
   {`youtube`}
 </Text>
-  <Text sx={{"fontSize": "0.8em"}}>
+  <Text sx={{"fontSize": "0.8em", "color": ["#c3c7cb"]}}>
   {`Videos explicativos`}
 </Text>
 </VStack>
@@ -107,14 +112,14 @@ export default function Component() {
 </Button>
 </Link>
   <Link as={NextLink} href={`https://www.linkedin.com/in/nicolaspelecano/`} isExternal={true} sx={{"width": "100%", "textDecoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em"}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "backgroundColor": ["#171f26"], "color": ["#f1f2f4"], "_hover": {"backgroundColor": ["#087ec4"]}}}>
   <HStack>
   <ArrowForwardIcon sx={{"width": "2em", "height": "2em"}}/>
   <VStack alignItems={`start`}>
-  <Text sx={{"fontSize": "1em"}}>
+  <Text sx={{"fontSize": "1em", "color": ["#f1f2f4"]}}>
   {`linked in`}
 </Text>
-  <Text sx={{"fontSize": "0.8em"}}>
+  <Text sx={{"fontSize": "0.8em", "color": ["#c3c7cb"]}}>
   {`Todos sabemos que es linkedin`}
 </Text>
 </VStack>
@@ -122,14 +127,14 @@ export default function Component() {
 </Button>
 </Link>
   <Link as={NextLink} href={`#`} isExternal={true} sx={{"width": "100%", "textDecoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em"}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "backgroundColor": ["#171f26"], "color": ["#f1f2f4"], "_hover": {"backgroundColor": ["#087ec4"]}}}>
   <HStack>
   <ArrowForwardIcon sx={{"width": "2em", "height": "2em"}}/>
   <VStack alignItems={`start`}>
-  <Text sx={{"fontSize": "1em"}}>
+  <Text sx={{"fontSize": "1em", "color": ["#f1f2f4"]}}>
   {`facebook`}
 </Text>
-  <Text sx={{"fontSize": "0.8em"}}>
+  <Text sx={{"fontSize": "0.8em", "color": ["#c3c7cb"]}}>
   {`Caralibro`}
 </Text>
 </VStack>
@@ -139,7 +144,7 @@ export default function Component() {
 </VStack>
 </VStack>
 </Center>
-  <VStack sx={{"marginBottom": "0.8em"}}>
+  <VStack sx={{"marginBottom": "0.8em", "paddingBottom": "0.8em", "color": ["#a3abb2"]}}>
   <ChakraImage src={`favicon.ico`}/>
   <Link as={NextLink} href={`http://www.linkedin.com`} isExternal={true} sx={{"fontSize": "0.8em", "textDecoration": "none", "_hover": {}}}>
   {`soy el footer del año 2023`}
