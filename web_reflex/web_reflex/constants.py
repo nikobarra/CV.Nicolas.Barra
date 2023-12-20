@@ -1,5 +1,11 @@
+from datetime import date
+
 # urls contantes
 
 GITHUB = "https://github.com/nikobarra"
-YOUTUBE = "https://www.youtube.com"
+CODERHOUSE = "https://www.coderhouse.com"
 LINKEDIN ="https://www.linkedin.com/in/nicolaspelecano/"
+JUNIOR ="https://junior.org.ar/"
+VACIO="#"
+
+BIRTHDATE =(date(1979,7,20))

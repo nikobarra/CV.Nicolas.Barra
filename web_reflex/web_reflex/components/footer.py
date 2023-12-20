@@ -6,13 +6,16 @@ from web_reflex.styles.colors import *
 def footer()-> rx.Component:
     return rx.vstack(
         rx.image(src="favicon.ico"),
-        rx.link(f"soy el footer del año {datetime.date.today().year}", 
-        href="http://www.linkedin.com",
+        rx.link("Sitio realizado con Reflex python.", 
+        href="http://www.reflex.dev",
         is_external=True,
 
         font_size=Size.MEDIUM.value,
         ),
-        rx.text("From Argentina to the world.",
+        rx.text("por Nicolás Barra",
+            font_size=Size.MEDIUM.value
+        ),
+        rx.text(f"Actualizado hasta {datetime.date.today().year}",
             font_size=Size.MEDIUM.value
         ),
         margin_bottom=Size.MEDIUM.value,

@@ -4,7 +4,7 @@ from enum import Enum
 from .colors import Color, TextColor
 
 # contantes
-MAX_WIDTH="600px"
+MAX_WIDTH="700px"
 MARGIN="30px"
 
 # medidas

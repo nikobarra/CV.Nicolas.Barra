@@ -2,12 +2,13 @@ import reflex as rx
 from web_reflex.components.navbar import navbar
 from web_reflex.views.header.header import header
 from web_reflex.views.links.links import links
+from web_reflex.components.education import education
 from web_reflex.components.footer import footer
 import web_reflex.styles.styles as styles
 from web_reflex.styles.styles import Size as Size
 
-class State(rx.State):
-    pass
+#class State(rx.State):
+#    pass
 
 def index() -> rx.Component:
     return rx.box(navbar(),
@@ -15,6 +16,7 @@ def index() -> rx.Component:
         rx.vstack(
             header(),
             links(),
+            education(),
             max_width=styles.MAX_WIDTH,
             width="100%",
             margin_y= Size.BIG.value ,),

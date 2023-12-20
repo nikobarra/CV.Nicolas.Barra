@@ -5,8 +5,8 @@ from web_reflex.styles.colors import Color as Color
 def navbar() -> rx.Component:
     return rx.hstack(
         rx.box(
-            rx.span("Nicolás.", color=Color.PRIMARY.value),
-            rx.span("Barra", color=Color.SECONDARY.value),
+            rx.span("Curriculum ", color=Color.PRIMARY.value),
+            rx.span("Vitae", color=Color.SECONDARY.value),
             font_family="Oswald",
             ),
         position="sticky",
